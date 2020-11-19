@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.virtualmeetingapp.activites.AddPrisonersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--Phone Number Layout-->
+            <!--            <LinearLayout-->
+            <!--                android:visibility="gone"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_margin="25dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <com.hbb20.CountryCodePicker-->
+            <!--                    android:id="@+id/ccpAddOfficer"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="5dp"-->
+            <!--                    android:layout_marginTop="5dp"-->
+            <!--                    android:layout_marginBottom="5dp"-->
+            <!--                    android:background="@drawable/countrycode"-->
+            <!--                    android:elevation="4dp"-->
+            <!--                    android:padding="8.8dp"-->
+            <!--                    app:ccpDialog_textColor="#fff"-->
+            <!--                    app:ccp_contentColor="#fff"-->
+            <!--                    app:ccp_defaultNameCode="AE"-->
+            <!--                    app:ccp_flagBorderColor="#fff"-->
+            <!--                    app:ccp_textSize="12sp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/phoneNumberAddOfficer"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="1dp"-->
+            <!--                    android:layout_marginTop="5dp"-->
+            <!--                    android:layout_marginRight="5dp"-->
+            <!--                    android:layout_marginBottom="5dp"-->
+            <!--                    android:background="@drawable/mobile"-->
+            <!--                    android:elevation="4dp"-->
+            <!--                    android:gravity="left|center"-->
+            <!--                    android:hint="Mobile Number"-->
+            <!--                    android:padding="15dp"-->
+            <!--                    android:textColor="#fff"-->
+            <!--                    android:textColorHint="#A9A9A9"-->
+            <!--                    android:textSize="15sp" />-->
+
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="3"
+                android:paddingRight="25dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="#423e47" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:maxEms="1"
+                    android:ems="17"
+                    android:padding="5dp"
+                    android:text="Register Prisoners"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:background="#423e47" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/nameAddPrisoner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="4dp"
+                android:gravity="left|center"
+                android:hint="Username"
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:textColorHint="#A9A9A9"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/emailFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_bg_no_right_radius"
+                    android:padding="15dp"
+                    android:text="prisoner"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/emailAddPrisoner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/carbon_1dip"
+                    android:layout_weight="1"
+                    android:background="#423e47"
+                    android:elevation="4dp"
+                    android:hint="Prisoner ID"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_bg_no_left_radius"
+                    android:padding="15dp"
+                    android:text="@string/moi.ae"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/passwordAddPrisoner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="4dp"
+                android:gravity="left|center"
+                android:hint="Password"
+                android:padding="15dp"
+                android:textColor="#fff"
+                android:textColorHint="#A9A9A9"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_text_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@drawable/top_left_no_radius"
+                android:elevation="4dp"
+                android:gravity="center"
+                app:boxBackgroundMode="none"
+                app:boxStrokeWidth="0dp"
+                app:hintEnabled="false"
+                app:hintTextColor="#A9A9A9">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionAddPrisoner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:gravity="top|left"
+                    android:textColorHint="#A9A9A9" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <carbon.widget.Button
+                android:id="@+id/btnAddPrisoner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/pager_bg"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:text="Add Officer"
+                android:textColor="#ae863b"
+                android:textSize="15sp"
+                app:carbon_cornerRadius="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</carbon.widget.LinearLayout>
